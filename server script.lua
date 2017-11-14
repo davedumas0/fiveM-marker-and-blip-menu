@@ -1,14 +1,5 @@
 
 local temp1 = 1 
-   RegisterServerEvent("buttonAndGroup")
-AddEventHandler("buttonAndGroup", function(inputGroup, input)
- 
- file = io.open("C:\\server-data\\resources\\test3\\temp.txt", "a")
- file:write("\n \" button group:\" "..inputGroup.." \" button number:\" "..input)
- file:close()
-end)
-
-
    RegisterServerEvent('markers')
 AddEventHandler('markers', function(markBlipType, markType, X, Y, Z)
  local createthread = "Citizen.CreateThread(function()"
